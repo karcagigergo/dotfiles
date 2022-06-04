@@ -52,3 +52,6 @@
 
 [init]
   defaultBranch = master
+[user]
+	email = karcagigergo@gmail.com
+	name = Gergő Karcagi
