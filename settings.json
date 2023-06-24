@@ -66,7 +66,6 @@
         "rubocop": true
     },
     "telemetry.telemetryLevel": "off",
-    "window.restoreWindows": "preserve",
     "workbench.editor.enablePreview": true,
     "workbench.iconTheme": "vscode-icons",
     "workbench.settings.editor": "json",
@@ -75,8 +74,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "files.eol": "\n",
     "git.path": "/usr/bin",
-    "workbench.colorTheme": "Quiet Light",
-    "window.zoomLevel": -1,
     "redhat.telemetry.enabled": true,
     "editor.tokenColorCustomizations": {
       "textMateRules": []
@@ -84,5 +81,18 @@
     "editor.inlineSuggest.enabled": true,
     "editor.accessibilitySupport": "off",
     "vsicons.dontShowNewVersionMessage": true,
-    "dotenv.enableAutocloaking": false
+    "dotenv.enableAutocloaking": false,
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Quiet Light",
+    "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
+    },
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "files.associations": {
+      ".env*": "dotenv"
+    }
 }
