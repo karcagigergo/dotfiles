@@ -63,10 +63,10 @@
     "python.linting.pylintEnabled": false,
     "python.terminal.activateEnvironment": false,
     "ruby.lint": {
+
         "rubocop": true
     },
     "telemetry.telemetryLevel": "off",
-    "workbench.editor.enablePreview": true,
     "workbench.iconTheme": "vscode-icons",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
@@ -95,5 +95,23 @@
     "files.associations": {
       ".env*": "dotenv"
     },
-    "editor.linkedEditing": true
+    "editor.linkedEditing": true,
+    "pasteAndIndent.selectAfter": true,
+    "ruby.format": true,
+    "ruby.codeCompletion": "rcodetools",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "[ruby]": {
+      "editor.defaultFormatter": "Shopify.ruby-lsp",
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.tabSize": 2,
+      "editor.insertSpaces": true,
+      "files.trimTrailingWhitespace": true,
+      "files.insertFinalNewline": true,
+      "files.trimFinalNewlines": true,
+      "editor.rulers": [
+        120
+      ],
+      "editor.semanticHighlighting.enabled": true
+    }
 }

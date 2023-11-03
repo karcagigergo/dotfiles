@@ -8,7 +8,7 @@ ZSH_THEME="robbyrussell"
 # Also see: https://github.com/pyenv/pyenv-virtualenv/issues/233#issuecomment-925643197
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(/opt/homebrew/Cellar/pyenv/2.3.11/libexec/pyenv init --path)"
+eval "$(/opt/homebrew/Cellar/pyenv/2.3.31/libexec/pyenv init --path)"
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
 plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
