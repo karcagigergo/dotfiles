@@ -83,7 +83,7 @@
     "vsicons.dontShowNewVersionMessage": true,
     "dotenv.enableAutocloaking": false,
     "window.zoomLevel": -1,
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "Tomorrow Night Blue",
     "github.copilot.enable": {
       "*": false,
       "plaintext": false,
