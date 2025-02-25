@@ -169,6 +169,6 @@
   "javascript.format.enable": false,
   "scss.format.enable": false,
   "editor.largeFileOptimizations": false,
-  "workbench.colorTheme": "Quiet Light",
-  "chat.commandCenter.enabled": false
+  "chat.commandCenter.enabled": false,
+  "extensions.ignoreRecommendations": true
 }

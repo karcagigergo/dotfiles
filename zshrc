@@ -8,6 +8,7 @@ ZSH_THEME="robbyrussell"
 # Also see: https://github.com/pyenv/pyenv-virtualenv/issues/233#issuecomment-925643197
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(/opt/homebrew/Cellar/pyenv/2.5.0/libexec/pyenv init --path)"
+RPROMPT="[%D{%y/%m/%f}|%@]"
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
 plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent rails)
@@ -17,6 +18,7 @@ export HOMEBREW_NO_ANALYTICS=1
 export PATH=/opt/homebrew/bin:$PATH
 
 export PATH=/usr/local/bin:"$PATH"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
 # Disable warning about insecure completion-dependent directories
 ZSH_DISABLE_COMPFIX=true
