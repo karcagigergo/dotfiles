@@ -161,7 +161,6 @@
   "rubyLsp.rubyVersionManager": {
     "identifier": "auto"
   },
-  "rubyLsp.formatter": "rubocop",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -170,5 +169,8 @@
   "scss.format.enable": false,
   "editor.largeFileOptimizations": false,
   "chat.commandCenter.enabled": false,
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "workbench.colorTheme": "Quiet Light",
+  "workbench.editor.empty.hint": "hidden",
+  "editor.formatOnPaste": true
 }

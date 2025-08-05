@@ -84,3 +84,29 @@ export PYTHONBREAKPOINT=ipdb.set_trace
 
 # show fullpath prompt with original prompt format
 # PROMPT=${PROMPT/\%c/\%~}
+
+function kill_idle() {
+  echo "[INFO] Killing idle connections to machinio_dev..."
+
+  psql -d postgres -Atc "
+  SELECT pid
+  FROM pg_stat_activity
+  WHERE datname = 'machinio_dev' AND state = 'idle' AND pid <> pg_backend_pid();
+  " | while read pid; do
+    if [[ -n $pid ]]; then
+      echo "[KILL] PID $pid"
+      psql -d postgres -c "SELECT pg_terminate_backend($pid);"
+    fi
+  done
+
+  echo "[INFO] Killing processes listening on port 3000..."
+
+  lsof -t -i tcp:3000 | while read pid; do
+    if [[ -n $pid ]]; then
+      echo "[KILL] Port 3000 PID $pid"
+      kill -9 "$pid"
+    fi
+  done
+
+  echo "[INFO] Done."
+}

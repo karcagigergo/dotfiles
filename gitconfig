@@ -53,5 +53,10 @@
 [init]
   defaultBranch = master
 [user]
-	email = karcagigergo@gmail.com
-	name = karcagigergo
+	email = 63460282+karcagigergo@users.noreply.github.com
+	name = Gergő Karcagi
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
